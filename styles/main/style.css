@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=M+PLUS+Rounded+1c:wght@500&family=Montserrat:wght@200;400;600;800&family=Poppins:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+:root {
+    --color1: #363062;
+    --color2: #4D4C7D;
+    --color3: #A6B1E1;
+    --color4: #E4E9F7;
+    --color5: #F99417;
+    --color6: #FFFFFF;
+    --button-color: #F99417;
+    --background-color: #EBECEE;
+    --background2-color: #FFFFFF;
+
+    --primaryfont: 'Krona One', sans-serif;
+    --secondaryfont: 'Montserrat', sans-serif;
+    --tertiaryfont: 'Poppins', sans-serif;
+    --quaternaryfont: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.logout {
+    font-size: 30px;
+    color: var(--color6);
+}
+
+body {
+    max-height: 100%;
+    background-color: var(--background-color);
+    font-family: var(--tertiaryfont);
+    position: relative;
+}
+
+
+.rodape {
+    margin-top: auto;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-size: 0.8rem;
+    font-family: var(--fonte-primaria);
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
