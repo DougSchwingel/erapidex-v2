@@ -109,3 +109,11 @@ li {
     font-size: 14px;
     color: var(--background2-color);
 }
+
+.menu-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    color: var(--color1);
+    font-size: 40px;
+}

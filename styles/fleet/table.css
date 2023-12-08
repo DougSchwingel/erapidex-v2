@@ -1,0 +1,50 @@
+.table-scroll{
+    margin-top: 40px;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+tr{
+    color: var(--color1);
+    text-align: center;
+}
+
+.table-link-text{
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: 600;
+}
+
+tr:hover{
+    background-color: var(--color3);
+}
+
+.container-table{
+    width: 100%;
+}
+
+th{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background-color: var(--color1);
+    color: var(--background-color);
+    padding-top: 10px;
+}
+
+.table-columns:hover{
+    background-color: var(--color1);
+}
+
+td{
+    padding: 10px 0;
+}
+
+@media (max-height: 720px) {
+	.table-scroll{
+        max-height: 86vh;
+        overflow-y: scroll;
+    }
+}

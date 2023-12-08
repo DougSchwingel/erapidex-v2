@@ -1,0 +1,23 @@
+/* Dashboard Charts */
+
+.principal-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.chart-div {
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    width: 49vw;
+    height: 44.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

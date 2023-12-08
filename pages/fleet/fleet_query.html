@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Rapidex</title>
+    <link rel="stylesheet" href="/styles/main/reset.css">
+    <link rel="stylesheet" href="/styles/main/style.css">
+    <link rel="stylesheet" href="/styles/main/sidebar.css">
+    <link rel="stylesheet" href="/styles/fleet/fleet_query.css">
+    <link rel="stylesheet" href="/styles/fleet/table.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="sidebar" id="mySidenav">
+        <div class="logo-details">
+            <i class='logo'>
+                <img class="logo-image" src="/assets/logo/logo_branco.png">
+            </i>
+            <span class="logo-name">Rapidex</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a class="menu-link" href="/pages/main/dashboard.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="link_name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a class="menu-link" href="/pages/fleet/fleet.html">
+                        <i class='bx bx-bus'></i>
+                        <span class="link_name">Frota</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="sub-menu-text" href="/pages/fleet/fleet_query.html">Consulta</a></li>
+                    <li><a class="sub-menu-text" href="#">Cadastro</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a class="menu-link" href="#">
+                        <i class='bx bx-id-card'></i>
+                        <span class="link_name">Motoristas</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="sub-menu-text" href="#">Consulta</a></li>
+                    <li><a class="sub-menu-text" href="#">Multas</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="icon-link">
+                    <a class="menu-link" href="#">
+                        <i class='bx bx-trip'></i>
+                        <span class="link_name">Viagens</span>
+                    </a>
+                    <i class='bx bxs-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a class="sub-menu-text" href="#">Consulta</a></li>
+                    <li><a class="sub-menu-text" href="#">Cadastro</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-gas-pump'></i>
+                    <span class="link_name">Abastecimentos</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-dollar-circle'></i>
+                    <span class="link_name">Faturamento</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-bar-chart-square'></i>
+                    <span class="link_name">Relatórios</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-map'></i>
+                    <span class="link_name">Filiais</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-calendar'></i>
+                    <span class="link_name">Cronograma</span>
+                </a>
+            </li>
+            <li>
+                <a class="menu-link" href="#">
+                    <i class='bx bx-calculator'></i>
+                    <span class="link_name">Calculadora</span>
+                </a>
+            </li>
+        </ul>
+        <div class="profile-details" href="#">
+            <a class="menu-link" href="#">
+                <div class="profile-content">
+                    <img src="/assets/perfil.png" alt="profileImg">
+                </div>
+                <div class="name-job">
+                    <div class="profile_name">Nome</div>
+                    <div class="job">Cargo</div>
+                </div>
+            </a>
+            <a class="logout" href="/index.html">
+                <i class='bx bx-log-out'></i>
+            </a>
+        </div>
+    </div>
+
+    <section id="main">
+        <div class="home-content">
+            <i class='bx bx-menu menu-icon' onclick="toggleNav()"></i>
+            <a class="page-title">Consulta de Frota</a>
+        </div>
+        <div class="principal-container">
+            <div class="fleet-search">
+                <div class="search-group">
+                    <span class="search-text">Placa</span>
+                    <input class="search-input" id="plate-input" type="text" name="" required="">
+                </div>
+                <div class="search-group">
+                    <span class="search-text">Motorista</span>
+                    <input class="search-input" id="driver-input" type="text" name="" required="">
+                </div>
+                <div class="search-group">
+                    <span class="search-text">Filial</span>
+                    <input class="search-input" id="branch-input" type="text" name="" required="">
+                </div>
+                <div>
+                    <button class="search-button" type="button" onclick="alert('Hello world!')">Procurar</button>
+                </div>
+            </div>
+            <div class="table-scroll">
+                <table id="myTable2" class="container-table" border="1">
+                    <thead>
+                        <tr class="table-columns">
+                            <th onclick="sortTable(0)">Placa</th>
+                            <th onclick="sortTable(1)">Fabricante</th>
+                            <th onclick="sortTable(2)">Modelo</th>
+                            <th onclick="sortTable(3)">Ano</th>
+                            <th onclick="sortTable(4)">Motorista</th>
+                            <th onclick="sortTable(5)" >Chassi</th>
+                            <th onclick="sortTable(6)">Situação</th>
+                            <th onclick="sortTable(7)">Localização</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body" id="tabela-veiculos">
+                    </tbody>
+                </table>
+            </div>                        
+        </div>
+    </section>
+
+    <script src='/js/main/submenus.js'></script>
+    <script>
+        var arrowIcons = document.querySelectorAll(".arrow");
+        arrowIcons.forEach(function (arrow) {
+            arrow.addEventListener("click", function () {
+                var submenu = this.parentElement.nextElementSibling;
+                toggleSubmenu(submenu);
+                this.classList.toggle("rotate");
+            });
+        });
+    </script>
+    <script src='/js/fleet/table.js'></script>
+
+</body>
+
+</html>
