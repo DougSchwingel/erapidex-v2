@@ -1,6 +1,6 @@
 # ERapidex
 
-![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/HTML5-HYPERTEXT-E34F26?logo=html5&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/CSS3-STYLE-1572B6?logo=css3&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/JAVASCRIPT-SCRIPTS-F7DF1E?logo=javascript&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/STATUS-EM%20ANDAMENTO-FF9E0F?&style=for-the-badge)
+![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/HTML5-HYPERTEXT-E34F26?logo=html5&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/CSS3-STYLE-1572B6?logo=css3&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/JAVASCRIPT-SCRIPTS-F7DF1E?logo=javascript&style=for-the-badge&logoColor=ffffff) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/STATUS-EM%20ANDAMENTO-FF9E0F?&style=for-the-badge) ![https://img.shields.io/badge/:badgeContent](https://img.shields.io/badge/NODE.JS-API-339933?logo=node.js&style=for-the-badge&logoColor=FFFFFF)
 
 ## Visão Geral
 
