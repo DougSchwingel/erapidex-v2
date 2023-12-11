@@ -44,7 +44,14 @@ td{
 
 @media (max-height: 720px) {
 	.table-scroll{
-        max-height: 86vh;
+        max-height: 79vh;
+        overflow-y: scroll;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25){
+    .table-scroll{
+        max-height: 82vh;
         overflow-y: scroll;
     }
 }

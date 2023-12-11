@@ -1,0 +1,54 @@
+.principal-container{
+    color: var(--color1);
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.forms-header{
+    padding-bottom: 20px;
+}
+
+.form-title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.form-options{
+    padding-left: 15px;
+    background-color: transparent;
+    border: none;
+    font-size: 17px;
+    width: 200px;
+}
+
+.form-container {
+    display: none;
+    border-style: solid;
+    border-color: var(--color1);
+    border-width: 1px;
+    width: 98vw;
+    height: 86vh;
+    padding: 10px;
+}
+
+.bodywork-info, .vehicle-info{
+    margin-top: 10px;
+}
+
+@media (max-height: 720px) {
+    .form-container{
+        height: 84vh;
+    }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.25){
+    .form-container{
+        height: 82vh;
+        width: 97vw;
+    }
+}

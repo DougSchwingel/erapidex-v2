@@ -36,3 +36,10 @@
 #driver-input{
     width: 350px;
 }
+
+@media (max-height: 720px) {
+	.table-scroll{
+        max-height: 86vh;
+        overflow-y: scroll;
+    }
+}
