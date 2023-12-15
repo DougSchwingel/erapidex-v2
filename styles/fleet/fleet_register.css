@@ -5,8 +5,9 @@
 }
 
 h2{
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
+    padding-bottom: 20px;
 }
 
 .forms-header{
@@ -14,24 +15,44 @@ h2{
 }
 
 .form-title{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
-.form-options{
-    padding-left: 15px;
+.form{
     background-color: transparent;
+    font-size: 18px;
     border: none;
-    font-size: 17px;
-    width: 200px;
 }
 
+select.form-options{
+    background-color: transparent;
+    font-size: 18px;
+    width: 290px;
+    max-width: 290px;
+    height: 34px;
+    border-style: solid;
+    border-color: var(--color1);
+    border-width: 1px;
+    text-transform: uppercase;
+}
+
+input.form-options{
+    background-color: transparent;
+    font-size: 16px;
+    height: 30px;
+    width: 284px;
+    border-style: solid;
+    border-color: var(--color1);
+    border-width: 1px;
+    text-transform: uppercase;
+}
 .form-container {
     display: none;
     border-style: solid;
     border-color: var(--color1);
     border-width: 1px;
-    width: 98vw;
+    width: 97.5vw;
     height: 86vh;
     padding: 10px;
 }
@@ -40,15 +61,32 @@ h2{
     margin-top: 10px;
 }
 
+.table-input-name{
+    padding: 5px 15px 5px 10px  ;
+    font-size: 20px;
+}
+
+.table-input{
+    padding-right: 30px;
+}
+
+td{
+    padding: 10px 0 0 0;
+}
+option{
+    font-size: 16px;
+}
+
 @media (max-height: 720px) {
     .form-container{
-        height: 84vh;
+        height: 81.5vh;
+        width: 96.5vw;
     }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.25){
     .form-container{
-        height: 82vh;
+        height: 82.5vh;
         width: 97vw;
     }
 }

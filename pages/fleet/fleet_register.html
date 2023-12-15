@@ -130,7 +130,7 @@
         <div class="principal-container">
             <div class="forms-header">
             <label class="form-title" for="form-selection">Selecione um Formulário:</label>
-                <select class="form-options" id="form-selection" onchange="mostrarFormulario()">
+                <select class="form" id="form-selection" onchange="mostrarFormulario()">
                     <option value="form0">Selecionar</option>
                     <option value="form1">Veículos Utilitários</option>
                     <option value="form2">Veículos de Carga</option>
@@ -141,7 +141,7 @@
                     <h2>Cadastro de Veículos Utilitários</h2>
                     <form>
                         <div class="vehicle-info">
-                            <label for="form-selection">Tipo de Carroceria:</label>
+                            <label for="form-selection">Tipo de Veículos:</label>
                                 <select class="form-options">
                                     <option value="form0">Selecionar</option>
                                     <option value="form1">Caçamba</option>
@@ -167,27 +167,206 @@
                 <div id="form2" class="form-container">
                     <h2>Cadastro de Veículos de Carga</h2>
                     <form>
-                        <div class="vehicle-info">
-                            <label for="form-selection">Tipo de Carroceria:</label>
-                                <select class="form-options">
-                                    <option value="form0">Selecionar</option>
-                                    <option value="form1">Caçamba</option>
-                                    <option value="form2">Grade Baixa</option>
-                                    <option value="form3">Graneleira</option>
-                                    <option value="form4">Prancha</option>
-                                    <option value="form5">Plataforma</option>
-                                    <option value="form6">Baú</option>
-                                    <option value="form7">Baú Frigorífico</option>
-                                    <option value="form8">Sider</option>
-                                    <option value="form9">Basculante</option>
-                                    <option value="form10">Canavieira</option>
-                                    <option value="form11">Florestal</option>
-                                    <option value="form12">Munck</option>
-                                    <option value="form13">Boiadeira</option>
-                                    <option value="form14">Tanque</option>
-                                    <option value="form15">Container</option>
-                                </select>
-                            </div>
+                        <table>
+                            <tr>
+                                <td class="table-input-name">Placa</td>
+                                <td class="table-input"><input class="form-options" type="text" name="placa" required="">  </td>
+                                <td class="table-input-name">Fabricante</td>
+                                <td class="table-input ">
+                                    <select name="fabricante" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="Chevrolet">Chevrolet</option>
+                                        <option value="DAF">DAF</option>
+                                        <option value="Ford">Ford</option>
+                                        <option value="Iveco">Iveco</option>
+                                        <option value="MAN">MAN</option>
+                                        <option value="Mercedes-Benz">Mercedes-Benz</option>
+                                        <option value="Scania">Scania</option>
+                                        <option value="Volkswagen">Volkswagen</option>
+                                        <option value="Volvo">Volvo</option>
+                                    </select>
+                                </td>
+                                <td class="table-input-name">Modelo</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="modelo" required="">
+                                </td>
+                                <td class="table-input-name">Ano</td>
+                                <td class="table-input">
+                                    <select name="ano" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-input-name">Chassi</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="chassi" required="">
+                                </td>
+                                <td class="table-input-name">Renavam</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="renavam" required="">  
+                                </td>
+                                <td class="table-input-name">Categoria</td>
+                                <td class="table-input">
+                                    <select name="categoria" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="3/4">3/4</option>
+                                        <option value="Toco">Toco</option>
+                                        <option value="Cavalo">Cavalo</option>
+                                        <option value="Bi-Trem">Bi-Trem</option>
+                                        <option value="RodoTrem">RodoTrem</option>
+                                        <option value="Caminhonete">Caminhonete</option>
+                                        <option value="Carro">Carro</option>
+                                        <option value="Moto">Moto</option>
+                                    </select>  
+                                </td>
+                                <td class="table-input-name">Carroceria</td>
+                                <td class="table-input">
+                                    <select name="carroceria" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="1">Caçamba</option>
+                                        <option value="2">Grade Baixa</option>
+                                        <option value="3">Graneleira</option>
+                                        <option value="4">Prancha</option>
+                                        <option value="5">Plataforma</option>
+                                        <option value="6">Baú</option>
+                                        <option value="7">Baú Frigorífico</option>
+                                        <option value="8">Sider</option>
+                                        <option value="9">Basculante</option>
+                                        <option value="10">Canavieira</option>
+                                        <option value="11">Florestal</option>
+                                        <option value="12">Munck</option>
+                                        <option value="13">Boiadeira</option>
+                                        <option value="14">Tanque</option>
+                                        <option value="15">Container</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-input-name">Eixos</td>
+                                <td class="table-input">
+                                    <select name="eixos" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </td>
+                                <td class="table-input-name">Tara</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="tara" required="">  
+                                </td>
+                                <td class="table-input-name">Combustível</td>
+                                <td class="table-input">
+                                    <select name="combustivel" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="Gasolina">Gasolina</option>
+                                        <option value="Álcool">Álcool</option>
+                                        <option value="Flex">Flex</option>
+                                    </select>
+                                </td>
+                                <td class="table-input-name">Potência(cv)</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="potencia" required="">  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-input-name">Pneus</td>
+                                <td class="table-input">
+                                    <select name="pneus" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="100/80 R17">100/80 R17</option>
+                                        <option value="225/45 R18">225/45 R18</option>
+                                        <option value="225/50 R17">225/50 R17</option>
+                                        <option value="265/70 R17">265/70 R17</option>
+                                        <option value="315/70 R22.5">315/70 R22.5</option>
+                                        <option value="315/80 R22.5">315/80 R22.5</option>
+                                        <option value="385/65 R22.5">385/65 R22.5</option>
+                                        <option value="80/90-17">80/90-17</option>
+                                        <option value="215/75 R17.5">215/75 R17.5</option>
+                                    </select>
+                                </td>
+                                <td class="table-input-name">Capacidade</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="capacidade" required="">  
+                                </td>
+                                <td class="table-input-name">Tanque(L)</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="tanque" required="">  
+                                </td>
+                                <td class="table-input-name">Hodômetro</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="hodometro" required="">  
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-input-name">Cor</td>
+                                <td class="table-input">
+                                    <select name="cor" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="1">Indigo</option>
+                                        <option value="2">Preto</option>
+                                        <option value="3">Vermelho</option>
+                                        <option value="4">Azul</option>
+                                        <option value="5">Verde</option>
+                                        <option value="6">Amarelo</option>
+                                        <option value="7">Laranja</option>
+                                        <option value="8">Rosa</option>
+                                        <option value="9">Roxo</option>
+                                        <option value="10">Marrom</option>
+                                        <option value="11">Cinza</option>
+                                        <option value="12">Branco</option>
+                                        <option value="13">Turquesa</option>
+                                        <option value="14">Lilás</option>
+                                        <option value="15">Dourado</option>
+                                    </select>
+                                </td>
+                                <td class="table-input-name">Motorista</td>
+                                <td class="table-input">
+                                    <input class="form-options" type="text" name="motorista" id="motoristaInput" /*oninput="searchMotoristas()"*/ required>  
+                                    <ul id="motoristaResults"></ul>
+                                </td>
+                                <td class="table-input-name">Base</td>
+                                <td class="table-input">
+                                    <select name="base" class="form-options" required>
+                                        <option value="">Selecionar</option>
+                                        <option value="1">BARCELOS - AM</option>
+                                        <option value="2">BOITUVA - SP</option>
+                                        <option value="3">CONTAGEM - MG</option>
+                                        <option value="4">DOURADOS - MS</option>
+                                        <option value="5">JOÃO PESSOA - PB</option>
+                                        <option value="6">PELOTAS - RS</option>
+                                        <option value="7">VITORIA DA CONQUISTA - BA</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-input-name"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input"></td>
+                                <td class="table-input table-button">
+                                    <button type="button" onclick="">Cadastrar</button>
+                                </td>
+                            </tr>
+                        </table>
                     </form>
                 </div>
 
